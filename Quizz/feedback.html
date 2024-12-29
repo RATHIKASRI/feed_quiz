@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+          background-color: aqua;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Times New Roman', Times, serif;
+         }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            width: 30%;
+            margin: 10% 20% 0 20%; 
+            padding: 30px;
+            border-radius: 20px;
+            background-color: antiquewhite;
+            box-shadow: 0px 0px 4px black;
+        }
+
+        input,textarea, select {
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0px 0px 2px black;
+        }
+
+        input:hover, textarea:hover, select:hover {
+            background-color: rgb(246, 246, 238);
+            border: 1px solid black;
+        }
+
+        form {
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        form textarea {
+            width: 300px;
+            height: 70px;
+        }
+
+        .submit-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            margin: 0 30% 0 30%;
+            border-radius: 5px;
+            box-shadow: 0px 0px 3px black;
+            border: none;
+            transition: all ease-in-out 0.8s;
+        }
+
+        .submit-btn:hover {
+            box-shadow: none;
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> <center><header>feedback form</header></center></h1> <br>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="how useful this quiz">Last name:</label>
+            <input type="text" id="how useful this quiz" name="how useful this quiz"><br><br>
+            <h1><header><p>how usefull this quiz for you</p></header></h1>
+            <textarea></textarea>   <br> <br>
+            <button class="submit-btn"> Submit</button>   
+          </form>
+    </div>
+   
+</body>
+</html>

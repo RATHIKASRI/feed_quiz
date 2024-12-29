@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body {
+background-color: aqua;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+   width: 500px;
+height: max-content;
+background-color: bisque;
+margin: 5%;
+border-radius: 50px;
+padding: 30px;
+box-shadow: 0px 0px 4px black;
+}
+
+input,textarea, select {
+border-radius: 5px;
+border: none;
+box-shadow: 0px 0px 2px black;
+}
+
+input:hover, textarea:hover, select:hover {
+background-color: rgb(246, 246, 238);
+border: 1px solid black;
+}
+
+.container h1 {
+text-align: center;
+margin: 30px;
+}
+.form-page label {
+margin: 20%;
+}
+#first-name {
+margin-left: 25px ;
+}
+#middle-name {
+margin-left: 10px ;
+}
+#last-name {
+margin-left: 35px ;
+}
+#rollNumber {
+margin-left: 16px ;
+}
+#college-name {
+margin-left: 10px ;
+}
+#Degree-name {
+margin-left: 58px ;
+}
+#field-of-study {
+margin-left: 18px ;
+}
+#email-id {
+margin-left: 50px ;
+}
+#country-code {
+margin-left: 23px ;
+}
+#country-name {
+margin-left: 15px ;
+}
+#address {
+margin-left: 55px ;
+}
+
+.submit {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 40%;
+width: 80px;
+border-radius: 10px;
+box-shadow: 0px 0px 5px black;
+border: none;
+transition: all ease-in-out 0.8s;
+}
+
+.submit:hover, .quizz-btn:hover {
+box-shadow: none;
+border: 1px solid black;
+background-color: aqua;
+}
+
+.quizz-btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28%;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    border-radius: 10px;
+    border: 0.5px solid black;
+    box-shadow: 0px 0px 5px black;
+    transition: all ease-in-out 0.8s;
+}
+
+.quizz-btn h1 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+ }
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="form-page">
+<h1>Registration Form </h1>
+<form action="">
+<label for="name">First Name : <input type="text" name="first-name" id="first-name"
+required> </label><br><br>
+<label for="name">Middle Name : <input type="text" name="middle-name" id="middle-name"> </label><br><br>
+<label for="name">last Name : <input type="text" name="last-name" id="last-name"
+required> </label><br><br>
+<label for="name">Roll Number : <input type="number" name="rollNumber"
+id="rollNumber" required> </label><br><br>
+<label for="name">College Name : <input type="text" name="college-name" id="college-name" required> </label><br><br>
+<label for="name">Degree : <input type="text" name="Degree-name" id="Degree-name"
+required> </label><br><br>
+<label for="name">field-of-study : <select type="text" name="field-of-study" id="field-of-study" required>
+<option value="field-of-study" >IT</option>
+<option value="field-of-study" >CSE</option>
+<option value="field-of-study" >EEE</option>
+<option value="field-of-study" >ECE</option>
+<option value="field-of-study" >MECHANICAL</option>
+<option value="field-of-study" >CYBER SECURITY</option>
+<option value="field-of-study" >AIDS</option>
+</select> </label><br><br>
+<label for="name">Email Id : <input type="email" name="email-id" id="email-id" required>
+</label><br><br>
+<label for="name">country code : <input type="text" name="country-code" id="country-code" required> </label><br><br>
+<label for="name">country Name : <input type="text" name="country-name" id="country-name" required> </label><br><br>
+<label for="address"> Address : <textarea name="address" id="address"></textarea>
+</label><br><br>
+<button class="submit">submit</button> <br>
+<button class="quizz-btn"> <h1><center><a href="quiz.html">START QUIZ</a></center></h1> </button>
+</form>
+</div>
+</div><br>
+
+</body>
+</html>
